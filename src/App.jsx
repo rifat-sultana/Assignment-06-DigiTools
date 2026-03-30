@@ -2,6 +2,7 @@
 import './App.css'
 import Herosection from './Components/Herosection/Herosection'
 import Navbar from "./Components/Navbar"
+// import StatsSection from "./Components/Statsection/Statsection";
 
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
     <>
       <Navbar />
       <Herosection />
+
+      {/* <Statsection /> */}
+
+
 
 
 

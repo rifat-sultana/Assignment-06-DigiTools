@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes instantly\nOptimized for ATS systems",
+    "price": 0,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "DesignPro Toolkit",
+    "description": "Premium UI/UX design assets\nPerfect for designers and developers",
+    "price": 12,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["500+ UI kits", "Figma support", "Commercial license"],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Code Assistant AI",
+    "description": "Boost coding productivity\nGet real-time suggestions",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Auto code completion", "Bug detection", "Multi-language support"],
+    "icon": "💻"
+  },
+  {
+    "id": 4,
+    "name": "Social Media Scheduler",
+    "description": "Schedule posts across platforms\nSave time and stay consistent",
+    "price": 10,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Auto scheduling", "Analytics dashboard", "Multi-platform support"],
+    "icon": "📅"
+  },
+  {
+    "id": 5,
+    "name": "SEO Booster Tool",
+    "description": "Improve your website ranking\nGet keyword insights instantly",
+    "price": 25,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Keyword research", "Site audit", "Competitor analysis"],
+    "icon": "📈"
+  },
+  {
+    "id": 6,
+    "name": "AI Content Writer",
+    "description": "Generate blog posts and ads\nFast and high-quality writing",
+    "price": 20,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Long-form content", "SEO optimization", "Multiple tones"],
+    "icon": "✍️"
+  },
+  {
+    "id": 7,
+    "name": "Video Editor Pro",
+    "description": "Edit videos like a pro\nNo experience required",
+    "price": 50,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Drag & drop editor", "Transitions", "4K export"],
+    "icon": "🎬"
+  },
+  {
+    "id": 8,
+    "name": "Website Builder AI",
+    "description": "Build websites in minutes\nNo coding needed",
+    "price": 30,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["AI-generated layouts", "Responsive design", "Hosting included"],
+    "icon": "🌐"
+  },
+  {
+    "id": 9,
+    "name": "Productivity Tracker",
+    "description": "Track your daily tasks\nImprove focus and efficiency",
+    "price": 5,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Task management", "Time tracking", "Reports"],
+    "icon": "⏱️"
+  }
+]
