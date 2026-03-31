@@ -1,8 +1,15 @@
 import { useState } from "react";
 import Check from "../../assets/assets/products/Check.png";
 
-const ToolsCard = ({ toolsData }) => {
+
+const ToolsCard = ({ toolsData,carts, setCarts }) => {
   const [isBuyNow, setIsBuyNow] = useState(false);
+
+
+  const handleBuyNow = () =>{
+    setIsBuyNow(true)
+    setCarts([...carts , toolsData])
+  }
 
   return (
     <div className="shadow-lg rounded-xl border p-6 relative bg-white">
@@ -16,7 +23,7 @@ const ToolsCard = ({ toolsData }) => {
 
       {/* icon */}
       <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mb-4">
-        <img src={toolsData.image} alt="icon" className="w-8" />
+        <img src={toolsData.icon} alt="icon" className="w-8" />
       </div>
 
       {/* title + description */}
@@ -53,7 +60,7 @@ const ToolsCard = ({ toolsData }) => {
 
       {/* button */}
       <button
-        onClick={() => setIsBuyNow(true)}
+        onClick={handleBuyNow}
         className="mt-6 w-full py-3 rounded-full text-white bg-gradient-to-r from-purple-600 to-blue-500"
       >
         {isBuyNow ? "Buy" : "Buy Now"}

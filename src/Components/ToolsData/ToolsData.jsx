@@ -4,7 +4,7 @@ import ToolsCard from "../ToolsCard/ToolsCard";
 
 
 
-const ToolsData = ({ dataPromise }) => {
+const ToolsData = ({ dataPromise,  setActiveTab,carts, setCarts }) => {
   const toolsData = use(dataPromise)
  
 
@@ -23,24 +23,41 @@ const ToolsData = ({ dataPromise }) => {
             to boost your productivity and creativity.
           </p>
 
-          <div className="mt-6 flex justify-center fond-bold gap-3">
-            <button className="bg-gradient-to-r from-purple-600 to-indigo-500 text-white px-6 py-2 rounded-full  text-sm shadow-md">
-              Products
-            </button>
+          <div className="tabs tabs-box justify-center gap-4">
+  <input 
+  type="radio"
+  name="my_tabs_1"
+  className="tab rounded-full w-40  " 
+  aria-label="Products"
+  onClick = {() => setActiveTab('products')}
+  defaultChecked
+  />
 
-            <button className="bg-white border border-gray-200 text-gray-600 px-6 py-2 rounded-full  text-sm shadow-sm">
-              Cart
-            </button>
-          </div>
+  <input 
+  type="radio" 
+  name="my_tabs_1" 
+  className="tab rounded-full w-40 " 
+  aria-label="Cart" 
+  onClick = {() => setActiveTab('cart')}
+ />
+  
+</div>
 
         </section>
       </div>
+
+
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
         {toolsData.map(toolsData =>(
           
 
-           <ToolsCard toolsData={toolsData}/>
+           <ToolsCard 
+           key={toolsData.id} 
+           toolsData={toolsData} 
+           carts={carts} s
+           etCarts={setCarts}
+           />
 
           
           ))}
