@@ -1,5 +1,5 @@
 
-import IconImg from "../assets/assets/products/Icon (Stroke).png"
+import IconImg from "../../assets/assets/products/Icon.png"
 
 
 const Navbar = () => {

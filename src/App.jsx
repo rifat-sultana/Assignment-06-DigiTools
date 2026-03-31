@@ -1,8 +1,21 @@
 
 import './App.css'
 import Herosection from './Components/Herosection/Herosection'
-import Navbar from "./Components/Navbar"
-// import StatsSection from "./Components/Statsection/Statsection";
+import Navbar from "./Components/Navbar/Navbar"
+import ToolsData from "./Components/ToolsData/ToolsData"
+// import StepsSelection from "./Components/StepsSelection/StepsSelection" 
+
+const getToolsData = async () =>{
+  const res = await fetch("/DigitalTools.json")
+  return res.json();
+}
+
+
+
+const dataPromise = getToolsData()
+
+
+
 
 
 function App() {
@@ -15,9 +28,9 @@ function App() {
 
       {/* <Statsection /> */}
 
+    <ToolsData dataPromise = {dataPromise} />
 
-
-
+    {/* <StepsSelection /> */}
 
     </>
   )
