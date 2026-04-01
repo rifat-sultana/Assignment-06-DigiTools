@@ -4,11 +4,11 @@ import ToolsCard from "../ToolsCard/ToolsCard";
 
 
 
-const ToolsData = ({ dataPromise,  setActiveTab,carts, setCarts }) => {
+const ToolsData = ({ dataPromise, activeTab, setActiveTab, carts, setCarts }) => {
   const toolsData = use(dataPromise)
  
-
   console.log(toolsData)
+
   return (
     <div className="max-w-7xl mx-auto ">
       <div >
@@ -24,24 +24,29 @@ const ToolsData = ({ dataPromise,  setActiveTab,carts, setCarts }) => {
           </p>
 
           <div className="tabs tabs-box justify-center gap-4">
-  <input 
-  type="radio"
-  name="my_tabs_1"
-  className="tab rounded-full w-40  " 
-  aria-label="Products"
-  onClick = {() => setActiveTab('products')}
-  defaultChecked
-  />
+ <button
+  onClick={() => setActiveTab("products")}
+  className={`rounded-full w-40 py-2 border ${
+    activeTab === "products"
+      ? "bg-gradient-to-r from-purple-600 to-blue-500 text-white"
+      : "bg-white text-black"
+  }`}
+>
+  Products
+</button>
 
-  <input 
-  type="radio" 
-  name="my_tabs_1" 
-  className="tab rounded-full w-40 " 
-  aria-label="Cart" 
-  onClick = {() => setActiveTab('cart')}
- />
-  
-</div>
+<button
+  onClick={() => setActiveTab("cart")}
+  className={`rounded-full w-40 py-2 border ${
+    activeTab === "cart"
+      ? "bg-gradient-to-r from-purple-600 to-blue-500"
+      : "bg-white text-black"
+  }`}
+>
+ Cart({carts.length})
+</button>
+
+  </div>
 
         </section>
       </div>
@@ -55,15 +60,15 @@ const ToolsData = ({ dataPromise,  setActiveTab,carts, setCarts }) => {
            <ToolsCard 
            key={toolsData.id} 
            toolsData={toolsData} 
-           carts={carts} s
-           etCarts={setCarts}
+           carts={carts} 
+           setCarts={setCarts}
            />
 
           
           ))}
          </div>
 
-      {/* </div> */}
+    
 
 
 

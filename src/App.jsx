@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar carts={carts}/>
 
       <Herosection 
       activeTab={activeTab}
@@ -43,10 +43,19 @@ function App() {
       <StatsSelection />
 
 
-    {activeTab ==="products" && <ToolsData dataPromise = {dataPromise} setActiveTab ={setActiveTab} carts={carts} setCarts={setCarts} />}
+    {activeTab ==="products" && 
+    <ToolsData 
+    dataPromise = {dataPromise}
+    activeTab={activeTab} 
+    setActiveTab ={setActiveTab} 
+    carts={carts} 
+    setCarts={setCarts} />}
   
 
-    {activeTab === "cart" && <Cart carts={carts} />}
+    {activeTab === "cart" && 
+    <Cart 
+    carts={carts} 
+    setCarts={setCarts}/>}
 
     <StepsSelection />
 

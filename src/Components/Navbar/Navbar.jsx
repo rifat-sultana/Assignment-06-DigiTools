@@ -2,7 +2,7 @@
 import IconImg from "../../assets/assets/products/Icon.png"
 
 
-const Navbar = () => {
+const Navbar = ({carts}) => {
   return (
     <div className="navbar w-full  flex items-center justify-between align-middle gap-20 bg-base-100 shadow-md pl-4">
   <div className="navbar-start">
@@ -22,11 +22,15 @@ const Navbar = () => {
   <div className=" pr-8 gap-3 "> 
   <div className="navbar-end flex items-center">
   <img src={IconImg} alt="icon" className="w-6 h-6 " />
+  <p className="font-semibold">({carts.length})</p>
+
   <a className="btn btn-ghost mr-2">Login</a>
   <a className="btn bg-purple-600 text-white rounded-full px-5 ">Get Started</a>
   </div>
 </div>
 </div>
+
+
   );
 };
 

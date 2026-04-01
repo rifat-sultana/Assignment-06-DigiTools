@@ -8,7 +8,7 @@ const ToolsCard = ({ toolsData,carts, setCarts }) => {
 
   const handleBuyNow = () =>{
     setIsBuyNow(true)
-    setCarts([...carts , toolsData])
+    setCarts([...carts, toolsData])
   }
 
   return (
