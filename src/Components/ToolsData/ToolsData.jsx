@@ -6,7 +6,7 @@ import ToolsCard from "../ToolsCard/ToolsCard";
 
 const ToolsData = ({ dataPromise, activeTab, setActiveTab, carts, setCarts }) => {
   const toolsData = use(dataPromise)
- 
+
   console.log(toolsData)
 
   return (
@@ -24,53 +24,44 @@ const ToolsData = ({ dataPromise, activeTab, setActiveTab, carts, setCarts }) =>
           </p>
 
           <div className="tabs tabs-box justify-center gap-4">
- <button
-  onClick={() => setActiveTab("products")}
-  className={`rounded-full w-40 py-2 border ${
-    activeTab === "products"
-      ? "bg-gradient-to-r from-purple-600 to-blue-500 text-white"
-      : "bg-white text-black"
-  }`}
->
-  Products
-</button>
 
-<button
-  onClick={() => setActiveTab("cart")}
-  className={`rounded-full w-40 py-2 border ${
-    activeTab === "cart"
-      ? "bg-gradient-to-r from-purple-600 to-blue-500"
-      : "bg-white text-black"
-  }`}
->
- Cart({carts.length})
-</button>
+            <button
+              onClick={() => setActiveTab("products")}
+              className={`rounded-full w-40 py-2 border ${activeTab === "products"
+                  ? "bg-gradient-to-r from-purple-600 to-blue-500 text-white"
+                  : "bg-white text-black"
+                }`}
+            >
+              Products
+            </button>
 
-  </div>
+            <button
+              onClick={() => setActiveTab("cart")}
+              className={`rounded-full w-40 py-2 border ${activeTab === "cart"
+                  ? "bg-gradient-to-r from-purple-600 to-blue-500"
+                  : "bg-white text-black"
+                }`}
+            >
+              Cart({carts.length})
+            </button>
+
+          </div>
 
         </section>
       </div>
 
-
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
-        {toolsData.map(toolsData =>(
-          
-
-           <ToolsCard 
-           key={toolsData.id} 
-           toolsData={toolsData} 
-           carts={carts} 
-           setCarts={setCarts}
-           />
-
-          
+      {activeTab === "products" && (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+          {toolsData.map((toolsData) => (
+            <ToolsCard
+              key={toolsData.id}
+              toolsData={toolsData}
+              carts={carts}
+              setCarts={setCarts}
+            />
           ))}
-         </div>
-
-    
-
-
+        </div>
+      )}
 
     </div>
   );

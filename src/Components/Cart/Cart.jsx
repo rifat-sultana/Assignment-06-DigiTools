@@ -11,14 +11,19 @@ const Cart = ({ carts, setCarts }) => {
   }
 
 
+  const handlePayment = () =>{
+    setCarts([])
+  }
+
   return (
      <div className="max-w-5xl mx-auto mt-10 p-5">
       <h2 className="text-3xl font-bold mb-6">Your Carts ({carts.length})</h2>
-      
-      {carts.length === 0 && (
-  <p className="text-gray-500 mb-4">No items in cart</p>)}
 
-      {carts.map(item => (
+
+        {
+          carts.length === 0 ? <p className="text-2xl text-center font-bold border py-2 rounded-md" > Cart is empty </p> :
+          <>
+          {carts.map(item => (
         <div 
           key={item.id} 
           className="flex justify-between items-center bg-gray-100 p-4 rounded-lg mb-4">
@@ -51,11 +56,19 @@ const Cart = ({ carts, setCarts }) => {
       ))}
 
       <div className=" flex justify-between rounded text-2xl p-5 mt-5 bg-gray-200"> 
-
         <div> Total </div>
         <div> ${totalPrice}  </div>
-
       </div>
+
+      <button onClick= {handlePayment} 
+      
+      className="bg-gradient-to-r from-purple-600 to-blue-500 text-white   flex justify-center rounded-md text-xl w-full p-5 mt-5 " > 
+
+        Proceed To checkout 
+        </button>
+          
+          </>
+        }
 
     </div>
   );
