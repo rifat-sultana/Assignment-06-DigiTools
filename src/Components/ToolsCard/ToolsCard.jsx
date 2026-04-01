@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Check from "../../assets/assets/products/Check.png";
+import {  toast } from 'react-toastify';
 
 
 const ToolsCard = ({ toolsData,carts, setCarts }) => {
@@ -9,6 +10,7 @@ const ToolsCard = ({ toolsData,carts, setCarts }) => {
   const handleBuyNow = () =>{
     setIsBuyNow(true)
     setCarts([...carts, toolsData])
+     toast.success("item added to cart")
   }
 
   return (

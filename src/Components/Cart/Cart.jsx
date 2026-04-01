@@ -1,4 +1,4 @@
-
+import {  toast } from 'react-toastify';
 
 const Cart = ({ carts, setCarts }) => {
   // console.log(carts)
@@ -8,16 +8,18 @@ const Cart = ({ carts, setCarts }) => {
  const handleRemove = (id) => {
     const updated = carts.filter(item => item.id !== id)
     setCarts(updated)
+     toast.success("Remove successfully")
   }
 
 
   const handlePayment = () =>{
     setCarts([])
+    toast.success("Payment Successfully")
   }
 
   return (
      <div className="max-w-5xl mx-auto mt-10 p-5">
-      <h2 className="text-3xl font-bold mb-6">Your Carts ({carts.length})</h2>
+      <h2 className="text-3xl font-bold mb-6"> Your Carts ({carts.length})</h2>
 
 
         {
@@ -47,9 +49,10 @@ const Cart = ({ carts, setCarts }) => {
           {/* RIGHT SIDE */}
           <button 
            onClick={() => handleRemove(item.id)}
-            className="text-red-500 text-sm hover:underline"
+           className="text-red-500 text-sm hover:underline"
           >
             Remove
+           
           </button>
 
         </div>
@@ -62,9 +65,10 @@ const Cart = ({ carts, setCarts }) => {
 
       <button onClick= {handlePayment} 
       
-      className="bg-gradient-to-r from-purple-600 to-blue-500 text-white   flex justify-center rounded-md text-xl w-full p-5 mt-5 " > 
+      className="bg-gradient-to-r from-purple-600 to-blue-500 text-white   flex justify-center rounded-md text-xl w-full p-5 mt-5"> 
 
         Proceed To checkout 
+        
         </button>
           
           </>
