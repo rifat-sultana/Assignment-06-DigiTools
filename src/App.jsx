@@ -6,8 +6,12 @@ import StatsSelection from "./Components/StatsSelection/StatsSelection"
 import ToolsData from "./Components/ToolsData/ToolsData"
 import Cart from "./Components/Cart/Cart"
 import { useState } from "react";
+import StepsSelection from "./Components/StepsSelection/StepsSelection"
+import PricingSection from "./Components/PricingSection/PricingSection"
+import Footer from "./Components/Footer/Footer"
 
-// import StepsSelection from "./Components/StepsSelection/StepsSelection" 
+
+
 
 const getToolsData = async () =>{
   const res = await fetch("/DigitalTools.json")
@@ -39,14 +43,16 @@ function App() {
       <StatsSelection />
 
 
-
-    
     {activeTab ==="products" && <ToolsData dataPromise = {dataPromise} setActiveTab ={setActiveTab} carts={carts} setCarts={setCarts} />}
   
 
     {activeTab === "cart" && <Cart carts={carts} />}
 
-    {/* <StepsSelection /> */}
+    <StepsSelection />
+
+    <PricingSection />
+
+    <Footer />
 
     </>
   )

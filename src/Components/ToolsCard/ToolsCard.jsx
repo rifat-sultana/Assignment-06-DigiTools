@@ -12,7 +12,7 @@ const ToolsCard = ({ toolsData,carts, setCarts }) => {
   }
 
   return (
-    <div className="shadow-lg rounded-xl border p-6 relative bg-white">
+    <div className="shadow-lg rounded-xl border p-6 relative bg-white ">
 
       {/* tag */}
       {toolsData.tag && (
@@ -22,8 +22,8 @@ const ToolsCard = ({ toolsData,carts, setCarts }) => {
       )}
 
       {/* icon */}
-      <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mb-4">
-        <img src={toolsData.icon} alt="icon" className="w-8" />
+      <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center text-3xl justify-center mb-4">
+          {toolsData.icon}
       </div>
 
       {/* title + description */}
