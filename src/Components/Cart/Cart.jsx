@@ -41,7 +41,7 @@ const Cart = ({ carts, setCarts }) => {
             {/* text */}
             <div>
               <h2 className="font-semibold">{item.name}</h2>
-              <p className="text-gray-500 text-sm">${item.price} </p>
+              <p className="text-gray-500 text-sm">${item.price}/{item.period} </p>
             </div>
 
           </div>
@@ -68,7 +68,7 @@ const Cart = ({ carts, setCarts }) => {
       className="bg-gradient-to-r from-purple-600 to-blue-500 text-white   flex justify-center rounded-md text-xl w-full p-5 mt-5"> 
 
         Proceed To checkout 
-        
+
         </button>
           
           </>

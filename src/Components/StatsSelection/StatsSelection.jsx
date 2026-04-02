@@ -10,7 +10,7 @@ const StatsSection = () => {
 
          
           <div className="flex-1 py-4">
-            <h2 className="text-2xl md:text-3xl font-bold">50K+</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">50K+</h2>
             <p className="text-sm mt-1">Active Users</p>
           </div>
 
@@ -19,7 +19,7 @@ const StatsSection = () => {
           <div className="block md:hidden w-12 h-px bg-white opacity-40"></div>
 
           <div className="flex-1 py-4">
-            <h2 className="text-2xl md:text-3xl font-bold">200+</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">200+</h2>
             <p className="text-sm mt-1">Premium Tools</p>
           </div>
 
@@ -27,7 +27,7 @@ const StatsSection = () => {
           <div className="block md:hidden w-12 h-px bg-white opacity-40"></div>
       
           <div className="flex-1 py-4">
-            <h2 className="text-2xl md:text-3xl font-bold">4.9</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">4.9</h2>
             <p className="text-sm mt-1">Rating</p>
           </div>
 

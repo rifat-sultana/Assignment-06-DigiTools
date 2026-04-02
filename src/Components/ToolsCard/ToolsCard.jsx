@@ -29,7 +29,7 @@ const ToolsCard = ({ toolsData,carts, setCarts }) => {
       </div>
 
       {/* title + description */}
-      <h3 className="text-lg font-semibold text-gray-800">
+      <h3 className="text-lg font-bold text-gray-800">
         {toolsData.name}
       </h3>
 
@@ -39,7 +39,7 @@ const ToolsCard = ({ toolsData,carts, setCarts }) => {
 
       {/* price */}
       <div className="text-xl font-bold mt-4">
-        ${toolsData.price}/month
+        ${toolsData.price}/{toolsData.period}
       </div>
 
       {/* features */}

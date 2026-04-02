@@ -24,7 +24,10 @@ const Herosection = ({ setActiveTab, activeTab }) => {
           </h1>
 
           <p className="py-6 text-[#627382]">
-            Access premium AI tools...
+            Access premium AI tools, design assets,templates, and productivity<br/>
+            software—all in one place. Start creating faster today.<br/>
+            Explore Products
+
           </p>
 
           <div className='space-x-4'>
@@ -40,7 +43,7 @@ const Herosection = ({ setActiveTab, activeTab }) => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-10">
+      {/* <div className="flex justify-center mt-10">
         <div className="flex gap-4 bg-white p-2 rounded-full shadow">
 
           <button
@@ -52,9 +55,9 @@ const Herosection = ({ setActiveTab, activeTab }) => {
             }`}
           >
             Products
-          </button>
+          </button> */}
 
-          <button
+          {/* <button
             onClick={() => setActiveTab("cart")}
             className={`px-6 py-2 rounded-full ${
               activeTab === "cart"
@@ -65,10 +68,10 @@ const Herosection = ({ setActiveTab, activeTab }) => {
             Cart
           </button>
 
-        </div>
+        </div> */}
       </div>
 
-    </div>
+    // </div>
   );
 };
 
