@@ -8,6 +8,7 @@ import Cart from "./Components/Cart/Cart"
 import { useState } from "react";
 import StepsSelection from "./Components/StepsSelection/StepsSelection"
 import PricingSection from "./Components/PricingSection/PricingSection"
+import CTASection from "./Components/CTASection/CTASection"
 import Footer from "./Components/Footer/Footer"
 
 
@@ -60,6 +61,8 @@ function App() {
     <StepsSelection />
 
     <PricingSection />
+
+    <CTASection />
 
     <Footer />
 

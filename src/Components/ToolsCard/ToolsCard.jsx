@@ -14,7 +14,8 @@ const ToolsCard = ({ toolsData,carts, setCarts }) => {
   }
 
   return (
-    <div className="shadow-lg rounded-xl border p-6 relative bg-white ">
+    <div className="shadow-lg border-0.5 rounded-xl p-6 relative bg-[#FFFFFF] 
+flex flex-col h-full hover:shadow-2xl transition duration-300">
 
       {/* tag */}
       {toolsData.tag && (

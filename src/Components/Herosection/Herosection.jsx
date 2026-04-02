@@ -7,13 +7,13 @@ import StarImg from "../../assets/assets/products/star.png"
 
 const Herosection = ({ setActiveTab, activeTab }) => {
   return (
-    <div className="hero bg-base-200 min-h-screen">
+    <div className="hero bg-base-200 py-16 lg:py-24">
 
-      <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="hero-content flex-col lg:flex-row-reverse ">
         <img className="max-w-sm rounded-lg shadow-2xl ml-10"
           src={BannerImg} alt="Banner" />
 
-        <div className="pr-10">
+        <div className="pr-10 mb-15">
           <p className="inline-flex items-center gap-2 bg-purple-100 text-purple-500 text-sm px-4 py-1 rounded-full font-medium">
             <span className="w-2 h-2 bg-purple-300 rounded-full"></span>
             New: AI-Powered Tools Available
@@ -23,14 +23,14 @@ const Herosection = ({ setActiveTab, activeTab }) => {
             Supercharge Your <br />Digital Workflow
           </h1>
 
-          <p className="py-6 text-[#627382]">
+          <p className="py-6 text-[#627382] text-[12px]">
             Access premium AI tools, design assets,templates, and productivity<br/>
             software—all in one place. Start creating faster today.<br/>
             Explore Products
 
           </p>
 
-          <div className='space-x-4'>
+          <div className='space-x-4 pt-5'>
             <button className="btn btn-primary rounded-full font-bold">
               Explore Products
             </button>
