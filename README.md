@@ -15,6 +15,7 @@ DigiTools is a modern web application where users can explore and purchase premi
 
 
 ##  Features
-- 🛒 Add to Cart functionality with real-time count update
-- 🔄 Toggle between Products and Cart with dynamic UI
-- 🔔 Instant feedback using toast notifications
+- Add to Cart functionality with real-time count update
+- Toggle between Products and Cart with dynamic UI
+- Instant feedback using toast notifications
+- Smooth tab switching between Products and Cart
