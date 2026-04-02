@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 
 # Project Name: DigiTools - Premium Digital Tools Marketplace
@@ -9,16 +7,16 @@ DigiTools is a modern web application where users can explore and purchase premi
 
 
 ##  Technologies Used
-- React.js
-- Tailwind CSS
-- DaisyUI
-- React Toastify
+React.js
+Tailwind CSS, DaisyUI
+JavaScript (ES6+)
+React-Toastify (NPM Package)
+JSON (for product data)
 
 
 
 ##  Features
 - Add to Cart functionality with real-time count update
-- Toggle between Products and Cart with dynamic UI
 - Instant feedback using toast notifications
 - Smooth tab switching between Products and Cart
->>>>>>> cc23b3f4209a8c5e1b324bd1c6f2c0e46cec7849
+
