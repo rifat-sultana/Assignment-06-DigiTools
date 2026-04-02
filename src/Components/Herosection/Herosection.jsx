@@ -7,13 +7,13 @@ import StarImg from "../../assets/assets/products/star.png"
 
 const Herosection = ({ setActiveTab, activeTab }) => {
   return (
-    <div className="hero bg-base-200 py-16 lg:py-24">
+    <div className="hero bg-base-200 min-h-[80vh] py-10">
 
-      <div className="hero-content flex-col lg:flex-row-reverse ">
+      <div className="hero-content flex-col lg:flex-row-reverse items-center">
         <img className="max-w-sm rounded-lg shadow-2xl ml-10"
           src={BannerImg} alt="Banner" />
 
-        <div className="pr-10 mb-15">
+        <div className="pr-10">
           <p className="inline-flex items-center gap-2 bg-purple-100 text-purple-500 text-sm px-4 py-1 rounded-full font-medium">
             <span className="w-2 h-2 bg-purple-300 rounded-full"></span>
             New: AI-Powered Tools Available
@@ -43,35 +43,9 @@ const Herosection = ({ setActiveTab, activeTab }) => {
         </div>
       </div>
 
-      {/* <div className="flex justify-center mt-10">
-        <div className="flex gap-4 bg-white p-2 rounded-full shadow">
-
-          <button
-            onClick={() => setActiveTab("products")}
-            className={`px-6 py-2 rounded-full ${
-              activeTab === "products"
-                ? "bg-purple-600 text-white"
-                : "bg-gray-100 text-gray-600"
-            }`}
-          >
-            Products
-          </button> */}
-
-          {/* <button
-            onClick={() => setActiveTab("cart")}
-            className={`px-6 py-2 rounded-full ${
-              activeTab === "cart"
-                ? "bg-purple-600 text-white"
-                : "bg-gray-100 text-gray-600"
-            }`}
-          >
-            Cart
-          </button>
-
-        </div> */}
+      
       </div>
 
-    // </div>
   );
 };
 

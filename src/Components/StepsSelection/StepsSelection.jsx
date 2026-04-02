@@ -4,7 +4,7 @@ import UserImg from "../../assets/assets/products/user.png"
 
 const StepsSelection = () => {
   return (
-    <div className="py-16 px-4 bg-gray-50">
+    <div className="py-16 px-2 bg-gray-50">
       {/* Heading */}
       <div className="text-center  mb-12">
         <h2 className="text-3xl font-bold mt-5">Get Started In 3 Steps</h2>
@@ -13,10 +13,10 @@ const StepsSelection = () => {
         </p>
       </div>
       {/* Cards */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 px-40">
 
         {/* Card 1 */}
-        <div className="relative bg-white rounded-xl p-8 text-center border shadow-sm">
+        <div className="relative bg-white rounded-xl p-8 text-center shadow-sm hover:shadow-xl">
           <div className="absolute top-4 right-4 bg-purple-600 text-white text-xs px-2 py-1 rounded-full">
             01
           </div>
@@ -31,7 +31,7 @@ const StepsSelection = () => {
 
         {/* card-2 */}
 
-        <div className="relative bg-white rounded-xl p-8 text-center border shadow-sm">
+        <div className="relative bg-white rounded-xl p-8 text-center shadow-sm hover:shadow-xl">
           <div className="absolute top-4 right-4 bg-purple-600 text-white text-xs px-2 py-1 rounded-full">
             02
           </div>
@@ -48,7 +48,7 @@ const StepsSelection = () => {
 
 
          {/* Card 3 */}
-        <div className="relative bg-white rounded-xl p-8 text-center border shadow-sm">
+        <div className="relative bg-white rounded-xl p-8 text-center shadow-sm hover:shadow-xl">
           <div className="absolute top-4 right-4 bg-purple-600 text-white text-xs px-2 py-1 rounded-full">
             03
           </div>

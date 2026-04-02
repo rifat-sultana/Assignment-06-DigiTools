@@ -72,7 +72,7 @@ const PricingSection = () => {
         </div>
 
         {/* Enterprise */}
-        <div className="bg-white rounded-xl p-6 border shadow-sm">
+        <div className="bg-white rounded-xl px-20 py-6  shadow-sm">
           <h3 className="font-semibold text-lg mb-2">Enterprise</h3>
           <p className="text-gray-500 text-sm mb-4">
             For teams and businesses

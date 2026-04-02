@@ -5,7 +5,7 @@ const ToolsData = ({ dataPromise, activeTab, setActiveTab, carts, setCarts }) =>
   const toolsData = use(dataPromise);
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto px-20">
 
       <section className="bg-gray-50 py-16 text-center">
 
@@ -18,27 +18,25 @@ const ToolsData = ({ dataPromise, activeTab, setActiveTab, carts, setCarts }) =>
           to boost your productivity and creativity.
         </p>
 
-        {/* 🔥 Tabs */}
+      
         <div className="flex justify-center gap-4 mt-5">
 
           <button
             onClick={() => setActiveTab("products")}
-            className={`rounded-full w-40 py-2 border transition-all duration-300 ${
-              activeTab === "products"
+            className={`rounded-full w-40 py-2 border transition-all duration-300 ${activeTab === "products"
                 ? "bg-gradient-to-r from-purple-600 to-blue-500 text-white"
                 : "bg-white text-black"
-            }`}
+              }`}
           >
             Products
           </button>
 
           <button
             onClick={() => setActiveTab("cart")}
-            className={`rounded-full w-40 py-2 border transition-all duration-300 ${
-              activeTab === "cart"
+            className={`rounded-full w-40 py-2 border transition-all duration-300 ${activeTab === "cart"
                 ? "bg-gradient-to-r from-purple-600 to-blue-500 text-white"
                 : "bg-white text-black"
-            }`}
+              }`}
           >
             Cart({carts.length})
           </button>
@@ -47,7 +45,7 @@ const ToolsData = ({ dataPromise, activeTab, setActiveTab, carts, setCarts }) =>
 
       </section>
 
-      {/* 🔥 Products show only when active */}
+     
       {activeTab === "products" && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {toolsData.map((item) => (
@@ -61,6 +59,26 @@ const ToolsData = ({ dataPromise, activeTab, setActiveTab, carts, setCarts }) =>
         </div>
 
       )}
+
+      {activeTab === "cart" && (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+          {carts.length === 0 ? (
+            <p className="col-span-full text-center text-gray-500">
+              No items in cart
+            </p>
+          ) : (
+            carts.map((item, index) => (
+              <ToolsCard
+                key={index}
+                toolsData={item}
+                carts={carts}
+                setCarts={setCarts}
+              />
+            ))
+          )}
+        </div>
+      )}
+
 
     </div>
   );
